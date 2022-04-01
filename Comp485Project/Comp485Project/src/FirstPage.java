@@ -115,11 +115,7 @@ public class FirstPage extends javax.swing.JFrame {
         loginPage.setVisible(true);
     }//GEN-LAST:event_jButton1MouseClicked
 
-
-    SignUpPage signup=new SignUpPage();
-    this.setVisible(false);
-    signup.setVisible(true);
-    }//GEN-LAST:event_jButton2MouseClicked
+                            
 
 
     /**
