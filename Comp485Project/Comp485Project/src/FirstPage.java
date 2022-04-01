@@ -34,6 +34,11 @@ public class FirstPage extends javax.swing.JFrame {
         setFocusableWindowState(false);
 
         jButton1.setText("Login");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -95,10 +100,27 @@ public class FirstPage extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+
+        this.setVisible(false);
+        
+        SignUpPage signPage = new SignUpPage();
+        
+        signPage.setVisible(true);
+    }//GEN-LAST:event_jButton2MouseClicked
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+        this.setVisible(false);
+        
+        LoginPage loginPage = new LoginPage();
+        loginPage.setVisible(true);
+    }//GEN-LAST:event_jButton1MouseClicked
+
+
     SignUpPage signup=new SignUpPage();
     this.setVisible(false);
     signup.setVisible(true);
     }//GEN-LAST:event_jButton2MouseClicked
+
 
     /**
      * @param args the command line arguments
